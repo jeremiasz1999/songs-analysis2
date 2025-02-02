@@ -38,3 +38,20 @@ print(df.columns)
 # Jeśli kolumna 'popularity' istnieje, usuń ją
 if 'popularity' in df.columns:
     X = df.drop('popularity', axis=1)  # cechy: wszystkie kolumny oprócz 'popularity'
+    y = df['popularity']  # zmienna docelowa: 'popularity'
+else:
+    print("'popularity' column not found")
+
+    # kodowanie kolumny "track_genre" na wartości numeryczne, sklearn nie akceptuje danych
+    # kategorycznych, więc kodujemy 'track_genre'
+    from sklearn.preprocessing import LabelEncoder
+
+    le = LabelEncoder()
+    df['track_genre'] = le.fit_transform(df['track_genre'])
+
+    # kodowanie kolumny "track_genre" na wartości numeryczne, sklearn nie akceptuje danych
+    # kategorycznych, więc kodujemy 'track_genre'
+    from sklearn.preprocessing import LabelEncoder
+
+df.head(20)
+print()
