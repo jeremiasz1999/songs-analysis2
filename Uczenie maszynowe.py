@@ -32,3 +32,9 @@ df.describe()
 #sprawdzenie typów danych
 df.dtypes
 
+# Sprawdzenie dostępnych kolumn
+print(df.columns)
+
+# Jeśli kolumna 'popularity' istnieje, usuń ją
+if 'popularity' in df.columns:
+    X = df.drop('popularity', axis=1)  # cechy: wszystkie kolumny oprócz 'popularity'
