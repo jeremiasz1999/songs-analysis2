@@ -9,3 +9,6 @@ df.head()
 #usuwanie duplikatów i brakujących wartości
 df.drop_duplicates(inplace=True)
 df.dropna(inplace=True)
+
+#sprawdzanie wymiarów datasetu po oczyszczeniu, wyświetlenia liczby wierszy i kolumn
+df.shape
