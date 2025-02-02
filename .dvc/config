@@ -1,0 +1,4 @@
+['remote "data_song_analysis"']
+    url = ssh://jp@153.19.8.113/home/jp/storages/269142
+['remote "remote_storage"']
+    url = ssh://jp@153.19.8.113/home/jp/storages/269142
