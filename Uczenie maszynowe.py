@@ -15,3 +15,7 @@ df.shape
 
 #wyświetlanie liczby wystąpień unikalnych gatunków, sprawdzenie rozkładu
 print(df['track_genre'].value_counts())
+
+#liczenie gatunków
+num_categories = df['track_genre'].nunique()
+num_categories
