@@ -48,3 +48,10 @@ else:
 
     le = LabelEncoder()
     df['track_genre'] = le.fit_transform(df['track_genre'])
+
+    # kodowanie kolumny "track_genre" na wartości numeryczne, sklearn nie akceptuje danych
+    # kategorycznych, więc kodujemy 'track_genre'
+    from sklearn.preprocessing import LabelEncoder
+
+df.head(20)
+print()
