@@ -54,4 +54,14 @@ else:
     from sklearn.preprocessing import LabelEncoder
 
 df.head(20)
-print()
+
+#podział danych i trenowanie modelu
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+
+#oddzielenie cech (x) od zmiennej docelowej (y)
+X = df.drop('popularity', axis=1) #cechy: wszytskie kolumny poza popularity
+y = df['popularity'] #zmienna docelowa: popularity
+
+#podział na dane treningowe i testowe
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
