@@ -12,3 +12,6 @@ df.dropna(inplace=True)
 
 #sprawdzanie wymiarów datasetu po oczyszczeniu, wyświetlenia liczby wierszy i kolumn
 df.shape
+
+#wyświetlanie liczby wystąpień unikalnych gatunków, sprawdzenie rozkładu
+print(df['track_genre'].value_counts())
