@@ -1,5 +1,5 @@
 import pandas as pd
-from collections import Counter,
+from collections import Counter
 
 
 #Wprowadzenie data setu do programu
