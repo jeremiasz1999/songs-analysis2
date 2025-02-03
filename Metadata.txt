@@ -1,0 +1,87 @@
+Opis danych z datasetu: 
+@misc{kaggle2025,
+  author = {Maharshi Pandya},
+  title = {Spotify Tracks Dataset},
+  year = {2023},
+  url = {https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset},
+  note = {Accessed: 2025-01-30}
+}
+
+track_id: float  
+Identyfikator Spotify dla utworu, który został usunięty.  
+
+artists: object  
+Nazwy artystów, którzy wykonali utwór. Jeśli jest więcej niż jeden artysta, są one rozdzielone znakiem ";".  
+
+album_name: object  
+Nazwa albumu, w którym pojawia się utwór.  
+
+track_name: object  
+Nazwa utworu.  
+
+popularity: integer  
+Popularność utworu jest wartością w zakresie od 0 do 100, gdzie 100 oznacza największą popularność.  
+Popularność obliczana jest na podstawie algorytmu uwzględniającego całkowitą liczbę odtworzeń oraz ich aktualność.  
+Utwory często odtwarzane obecnie mają wyższą popularność niż te, które były popularne w przeszłości.  
+Zduplikowane utwory (np. ten sam utwór na singlu i albumie) oceniane są niezależnie.  
+Popularność artysty i albumu wyprowadzana jest matematycznie z popularności utworów.  
+
+duration_ms: integer  
+Długość utworu w milisekundach.  
+
+explicit: boolean  
+Czy utwór zawiera wulgarny język?  
+- true = tak, zawiera  
+- false = nie, nie zawiera (lub brak danych)  
+
+danceability: float  
+Wskaźnik "taneczności" określający, jak dobrze utwór nadaje się do tańca.  
+Wartość 0.0 oznacza najmniejszą taneczność, a 1.0 największą.  
+
+energy: float  
+Miara intensywności i aktywności utworu w skali od 0.0 do 1.0.  
+Energetyczne utwory są zwykle szybkie, głośne i hałaśliwe (np. death metal ma wysoką energię, a preludium Bacha niską).  
+
+key: integer  
+Tonacja utworu według klasy Pitch Class:  
+0 = C, 1 = C♯/D♭, 2 = D, ..., 11 = H  
+Jeśli tonacja nie została wykryta, wartość wynosi -1.  
+
+loudness: float  
+Średnia głośność utworu w decybelach (dB).  
+
+mode: integer  
+Tryb określający modalność utworu:  
+- 1 = durowy (major)  
+- 0 = molowy (minor)  
+
+speechiness: float  
+Wskaźnik obecności mówionych słów w utworze:  
+- > 0.66 – prawdopodobnie mowa (np. podcast, audiobook)  
+- 0.33 - 0.66 – mieszanka muzyki i mowy (np. rap)  
+- < 0.33 – utwory muzyczne bez wyraźnych cech mowy  
+
+acousticness: float  
+Miara pewności (0.0 - 1.0), czy utwór jest akustyczny. Wartość 1.0 oznacza wysoką pewność.  
+
+instrumentalness: float  
+Określa prawdopodobieństwo, że utwór nie zawiera wokalu.  
+Dźwięki "ooh" i "aah" są traktowane jako instrumentalne.  
+Utwory rapowe lub mówione mają niską instrumentalność.  
+
+liveness: float  
+Wskaźnik obecności publiczności w nagraniu.  
+Wartość powyżej 0.8 sugeruje, że utwór jest nagraniem na żywo.  
+
+valence: float  
+Miara pozytywności emocjonalnej utworu w skali od 0.0 do 1.0.  
+Wysoka wartość oznacza wesołe i radosne utwory, niska – smutne lub ponure.  
+
+tempo: float  
+Szacowane tempo utworu w uderzeniach na minutę (BPM).  
+
+time_signature: integer  
+Szacowane metrum utworu. Wartości od 3 do 7 odpowiadają metrum od 3/4 do 7/4.  
+
+track_genre: object  
+Gatunek muzyczny utworu.  
