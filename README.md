@@ -17,3 +17,4 @@ popularność w serwisach streamingowych. Wykorzystując metody analizy danych o
 cechami utworów – takimi jak tempo, energia, tonacja czy struktura harmoniczna – a ich odbiorem
 przez słuchaczy. Uzyskane wyniki mogą dostarczyć cennych wskazówek dla twórców muzycznych,
 producentów oraz platform streamingowych w zakresie optymalizacji strategii promocyjnych i prognozowania przyszłych trendów muzycznych.
+
